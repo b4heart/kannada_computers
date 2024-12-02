@@ -163,3 +163,33 @@ int main(int argc, char const *argv[]) {
 # Execute it: 
 # >  g++ .\chapter1.cpp -o chapter1.exe; .\chapter1.exe hello world 1 2 3
 ```
+
+## Chapter 1.5
+
+### Possible solution to 'Try this yourself!'
+
+```cpp
+import sys
+
+if len(sys.argv) > 0:
+    core = str(sys.argv[1])
+    x = 2
+    
+    # note that even if you input argv[1] as a number, it will say that "core" is a string, as strings serve as a kind of superset in python
+    cite = str(sys.argv[0])
+    
+else:
+        print("need to give string argument")
+
+# note that this line is irrelivant, because even if you input argv[1] as a number, it considers "core" is a string, as strings serve as a kind of superset in python
+# demonstrated in line below.
+
+print(core, "is an example of ", type(core), x, "is an example of ", type(x))
+
+
+print("***** begin: " +core+ " *******")
+print("the count of the " +core+ ":", len(sys.argv) )
+print("information cited: " +cite)
+print("***** thank you, ending count *****")
+
+```
