@@ -174,8 +174,6 @@ import sys
 if len(sys.argv) > 0:
     core = str(sys.argv[1])
     x = 2
-    
-    # note that even if you input argv[1] as a number, it will say that "core" is a string, as strings serve as a kind of superset in python
     cite = str(sys.argv[0])
     
 else:
