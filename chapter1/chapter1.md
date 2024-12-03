@@ -165,6 +165,36 @@ int main(int argc, char const *argv[]) {
 ```
 
 ## Chapter 1.5
+### During the episode
+
+```cpp
+import sys
+
+len = len(sys.argv)
+cite = (sys.argv[0])
+x = 23.12
+if len > 1:
+    counter = str(sys.argv[1])
+
+else:
+    print("input some arguments")
+
+print("******begin: " +counter+ " ******")
+print("the " +counter+ " count is", len)
+print("this information was cited from", cite)
+print("****** end: " +counter+ " ******")
+print(type(cite), type(counter), type(x))
+
+num1 = int(sys.argv[2])
+num2 = int(sys.argv[3])
+num3 = int(sys.argv[4])
+
+
+sum3 = num1 + num2 + num3
+divisor = len - 2
+avg3 = sum3/divisor
+print(avg3, sum3)
+```
 
 ### Possible solution to 'Try this yourself!'
 
